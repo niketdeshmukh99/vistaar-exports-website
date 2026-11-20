@@ -34,12 +34,13 @@ p { margin: 0; }
 /* Header */
 .header { position: sticky; top: 0; z-index: 20; background: var(--white); border-bottom: 1px solid var(--grey-200); }
 .header-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-top: 16px; padding-bottom: 16px; }
-.logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-.logo-mark { width: 40px; height: 40px; background: var(--black); color: var(--white); display: flex; align-items: center; justify-content: center; font-family: var(--heading); font-weight: 700; font-size: 22px; }
-.logo-text { display: flex; flex-direction: column; line-height: 1.05; }
-.logo-name { font-family: var(--heading); font-weight: 700; font-size: 20px; letter-spacing: 0.12em; color: var(--black); }
-.logo-name.light { color: var(--white); }
-.logo-sub { font-size: 11px; letter-spacing: 0.32em; color: var(--grey-600); }
+.logo { display: flex; align-items: center; text-decoration: none; }
+.logo-text { display: inline-flex; flex-direction: column; align-items: center; gap: 6px; line-height: 1; font-family: 'Montserrat', var(--heading); }
+.logo-name { font-weight: 800; font-size: 24px; letter-spacing: 0.22em; padding-left: 0.22em; color: var(--black); }
+.logo-sub { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 9px; letter-spacing: 0.5em; padding-left: 0.5em; color: var(--black); }
+.logo-sub::before, .logo-sub::after { content: ""; width: 22px; height: 1px; background: currentColor; }
+.logo-text.light .logo-name, .logo-text.light .logo-sub { color: var(--white); }
+.footer-brand .logo-text { align-self: flex-start; }
 
 .nav { display: flex; align-items: center; gap: 28px; font-size: 15px; font-weight: 500; }
 .nav a:not(.btn) { text-decoration: none; }
