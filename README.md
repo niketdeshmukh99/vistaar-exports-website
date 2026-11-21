@@ -10,7 +10,6 @@ Website for **vistaarexports.com**. Plain HTML/CSS/JS — no build step.
 
 ## Quick edits
 Open `index.html` and search for these placeholders:
-- `[YOUR IEC]` — IEC code (footer)
 - `[YOUR ADDRESS]` — office address (contact section)
 - `[Sea / Air]` — shipping mode (hero box)
 - `[IF APPLICABLE]` — RCMC number (footer)
